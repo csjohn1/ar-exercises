@@ -8,3 +8,9 @@ puts "Exercise 5"
 puts "----------"
 
 # Your code goes here ...
+sum = Store.sum("annual_revenue")
+puts sum
+avg = Store.average("annual_revenue")
+puts avg
+whale = Store.where(annual_revenue: 1000000..100000000)
+puts whale.count
